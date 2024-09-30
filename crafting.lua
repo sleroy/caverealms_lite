@@ -1,13 +1,13 @@
 --thin ice to water
 minetest.register_craft({
-	output = "default:water_source",
+	output = "mcl_core:water_source",
 	type = "shapeless",
 	recipe = {"caverealms:thin_ice"}
 })
 
 --use for coal dust
 minetest.register_craft({
-	output = "default:coalblock",
+	output = "mcl_core:coalblock",
 	recipe = {
 		{"caverealms:coal_dust","caverealms:coal_dust","caverealms:coal_dust"},
 		{"caverealms:coal_dust","caverealms:coal_dust","caverealms:coal_dust"},
@@ -46,16 +46,16 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "caverealms:glow_obsidian_glass 5",
 	recipe = {
-		{"default:glass", "default:glass", "default:glass"},
-		{"default:glass", "default:glass", "caverealms:glow_obsidian"}
+		{"mcl_core:glass", "mcl_core:glass", "mcl_core:glass"},
+		{"mcl_core:glass", "mcl_core:glass", "caverealms:glow_obsidian"}
 	}
 })
 
 minetest.register_craft({
 	output = "caverealms:glow_obsidian_glass 5",
 	recipe = {
-		{"default:glass", "default:glass", "default:glass"},
-		{"default:glass", "default:glass", "caverealms:glow_obsidian_2"}
+		{"mcl_core:glass", "mcl_core:glass", "mcl_core:glass"},
+		{"mcl_core:glass", "mcl_core:glass", "caverealms:glow_obsidian_2"}
 	}
 })
 
@@ -72,9 +72,9 @@ if minetest.get_modpath("ethereal") then
 	minetest.register_craft({
 		output = "caverealms:angler_rod",
 		recipe = {
-				{"","","default:steel_ingot"},
-				{"", "default:steel_ingot", "caverealms:mushroom_gills"},
-				{"default:steel_ingot", "", "caverealms:mushroom_gills"},
+				{"","","mcl_core:steel_ingot"},
+				{"", "mcl_core:steel_ingot", "caverealms:mushroom_gills"},
+				{"mcl_core:steel_ingot", "", "caverealms:mushroom_gills"},
 			}
 	})
 
@@ -113,8 +113,8 @@ if minetest.get_modpath("ethereal") then
 
 			local node = minetest.get_node(pointed_thing.under).name
 
-			if (node == "default:water_source"
-			or node == "default:river_water_source")
+			if (node == "mcl_core:water_source"
+			or node == "mcl_core:river_water_source")
 			and math.random(1, 100) < 35 then
 
 				local type = fish[math.random(1, #fish)][1]

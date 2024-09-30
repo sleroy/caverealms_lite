@@ -82,7 +82,7 @@ else
 			fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 7 / 16, 4 / 16}
 		},
 		groups = {snappy = 2, dig_immediate = 3, flammable = 2},
-		sounds = default.node_sound_leaves_defaults(),
+		sounds = mcl_sounds.node_sound_leaves_defaults(),
 	})
 end
 
@@ -180,7 +180,7 @@ minetest.register_abm({
 		local num = minetest.find_nodes_in_area_under_air(
 			{x = pos.x - 1, y = pos.y - 2, z = pos.z - 1},
 			{x = pos.x + 1, y = pos.y + 1, z = pos.z + 1},
-			"default:cobble")
+			"mcl_core:cobble")
 		if #num > 0 then
 			minetest.set_node(num[math.random(#num)], {name = node.name})
 		end

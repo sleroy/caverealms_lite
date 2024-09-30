@@ -4,7 +4,7 @@ minetest.register_node("caverealms:glow_crystal", {
 	tiles = {"caverealms_glow_crystal.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 13,
 	paramtype = "light",
 	use_texture_alpha = true,
@@ -18,7 +18,7 @@ minetest.register_node("caverealms:glow_emerald", {
 	tiles = {"caverealms_glow_emerald.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 13,
 	paramtype = "light",
 	use_texture_alpha = true,
@@ -32,7 +32,7 @@ minetest.register_node("caverealms:glow_mese", {
 	tiles = {"caverealms_glow_mese.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 13,
 	paramtype = "light",
 	use_texture_alpha = true,
@@ -46,7 +46,7 @@ minetest.register_node("caverealms:glow_ruby", {
 	tiles = {"caverealms_glow_ruby.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 13,
 	paramtype = "light",
 	use_texture_alpha = true,
@@ -60,7 +60,7 @@ minetest.register_node("caverealms:glow_amethyst", {
 	tiles = {"caverealms_glow_amethyst.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 13,
 	paramtype = "light",
 	use_texture_alpha = true,
@@ -74,7 +74,7 @@ minetest.register_node("caverealms:glow_ore", {
 	tiles = {"caverealms_glow_ore.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 10,
 	paramtype = "light",
 })
@@ -85,7 +85,7 @@ minetest.register_node("caverealms:glow_emerald_ore", {
 	tiles = {"caverealms_glow_emerald_ore.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 10,
 	paramtype = "light",
 })
@@ -96,7 +96,7 @@ minetest.register_node("caverealms:glow_ruby_ore", {
 	tiles = {"caverealms_glow_ruby_ore.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 10,
 	paramtype = "light",
 })
@@ -107,7 +107,7 @@ minetest.register_node("caverealms:glow_amethyst_ore", {
 	tiles = {"caverealms_glow_amethyst_ore.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 10,
 	paramtype = "light",
 })
@@ -118,11 +118,11 @@ minetest.register_node("caverealms:thin_ice", {
 	tiles = {"caverealms_thin_ice.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	use_texture_alpha = true,
 	drawtype = "glasslike",
 	sunlight_propagates = true,
-	freezemelt = "default:water_source",
+	freezemelt = "mcl_core:water_source",
 	paramtype = "light",
 })
 
@@ -132,7 +132,7 @@ minetest.register_node("caverealms:salt_crystal", {
 	tiles = {"caverealms_salt_crystal.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 11,
 	paramtype = "light",
 	use_texture_alpha = true,
@@ -148,7 +148,7 @@ minetest.register_node("caverealms:glow_gem", {
 	wield_image = "caverealms_glow_gem.png",
 	is_ground_content = true,
 	groups = {cracky = 3, oddly_breakable_by_hand = 1, attached_node = 1},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 11,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -169,7 +169,7 @@ minetest.register_node("caverealms:salt_gem", {
 	wield_image = "caverealms_salt_gem.png",
 	is_ground_content = true,
 	groups = {cracky = 3, oddly_breakable_by_hand = 1, attached_node = 1},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 11,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -190,7 +190,7 @@ minetest.register_node("caverealms:spike", {
 	wield_image = "caverealms_spike.png",
 	is_ground_content = true,
 	groups = {cracky = 3, oddly_breakable_by_hand = 1, attached_node = 1},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 	light_source = 3,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -212,7 +212,7 @@ minetest.register_node("caverealms:icicle_up", {
 	wield_image = "caverealms_icicle_up.png",
 	is_ground_content = true,
 	groups = {cracky=3, oddly_breakable_by_hand=1},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 8,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -233,7 +233,7 @@ minetest.register_node("caverealms:icicle_down", {
 	wield_image = "caverealms_icicle_down.png",
 	is_ground_content = true,
 	groups = {cracky=3, oddly_breakable_by_hand=1},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 	light_source = 8,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -252,8 +252,8 @@ minetest.register_node("caverealms:stone_with_moss", {
 	tiles = {"default_cobble.png^caverealms_moss.png", "default_cobble.png", "default_cobble.png^caverealms_moss_side.png"},
 	is_ground_content = true,
 	groups = {crumbly=1, cracky=3},
-	drop = 'default:cobble',
-	sounds = default.node_sound_dirt_defaults({
+	drop = 'mcl_core:cobble',
+	sounds = mcl_sounds.node_sound_dirt_defaults({
 		footstep = {name="default_grass_footstep", gain=0.25},
 	}),
 })
@@ -264,8 +264,8 @@ minetest.register_node("caverealms:stone_with_lichen", {
 	tiles = {"default_cobble.png^caverealms_lichen.png", "default_cobble.png", "default_cobble.png^caverealms_lichen_side.png"},
 	is_ground_content = true,
 	groups = {crumbly=1, cracky=3},
-	drop = 'default:cobble',
-	sounds = default.node_sound_dirt_defaults({
+	drop = 'mcl_core:cobble',
+	sounds = mcl_sounds.node_sound_dirt_defaults({
 		footstep = {name="default_grass_footstep", gain=0.25},
 	}),
 })
@@ -276,8 +276,8 @@ minetest.register_node("caverealms:stone_with_algae", {
 	tiles = {"default_cobble.png^caverealms_algae.png", "default_cobble.png", "default_cobble.png^caverealms_algae_side.png"},
 	is_ground_content = true,
 	groups = {crumbly=1, cracky=3},
-	drop = 'default:cobble',
-	sounds = default.node_sound_dirt_defaults({
+	drop = 'mcl_core:cobble',
+	sounds = mcl_sounds.node_sound_dirt_defaults({
 		footstep = {name="default_grass_footstep", gain=0.25},
 	}),
 })
@@ -293,7 +293,7 @@ minetest.register_node("caverealms:stone_with_salt", {
 	sunlight_propagates = true,
 	is_ground_content = true,
 	groups = {cracky=3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 })
 
 --Hot Cobble - cobble with lava instead of mortar XD
@@ -305,7 +305,7 @@ minetest.register_node("caverealms:hot_cobble", {
 	damage_per_second = 1,
 	light_source = 3,
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults({
+	sounds = mcl_sounds.node_sound_stone_defaults({
 		footstep = {name="default_stone_footstep", gain=0.25},
 	}),
 })
@@ -318,7 +318,7 @@ minetest.register_node("caverealms:glow_obsidian", {
 	groups = {cracky=1, level=2},
 	light_source = 7,
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults({
+	sounds = mcl_sounds.node_sound_stone_defaults({
 		footstep = {name="default_stone_footstep", gain=0.25},
 	}),
 })
@@ -331,7 +331,7 @@ minetest.register_node("caverealms:glow_obsidian_2", {
 	groups = {cracky=1, hot=1, level=2},
 	light_source = 9,
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults({
+	sounds = mcl_sounds.node_sound_stone_defaults({
 		footstep = {name="default_stone_footstep", gain=0.25},
 	}),
 })
@@ -342,7 +342,7 @@ minetest.register_node("caverealms:glow_obsidian_brick", {
 	tiles = {"caverealms_glow_obsidian_brick.png"},
 	light_source = 7,
 	groups = {cracky = 1, level = 2},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_node("caverealms:glow_obsidian_brick_2", {
@@ -350,27 +350,27 @@ minetest.register_node("caverealms:glow_obsidian_brick_2", {
 	tiles = {"caverealms_glow_obsidian_brick_2.png"},
 	light_source = 9,
 	groups = {cracky = 1, level = 2},
-	sounds = default.node_sound_stone_defaults(),
+	sounds = mcl_sounds.node_sound_stone_defaults(),
 })
 
 --Glow Obsidian Stairs/Slabs
-stairs.register_stair_and_slab(
+mcl_stairs.register_stair_and_slab(
 	"glow_obsidian_brick",
 	"caverealms:glow_obsidian_brick",
 	{cracky = 1, level = 2},
 	{"caverealms_glow_obsidian_brick.png"},
 	"Glow Obsidian Brick Stair",
 	"Glow Obsidian Brick Slab",
-	default.node_sound_stone_defaults())
+	mcl_sounds.node_sound_stone_defaults())
 
-stairs.register_stair_and_slab(
+mcl_stairs.register_stair_and_slab(
 	"glow_obsidian_brick_2",
 	"caverealms:glow_obsidian_brick_2",
 	{cracky = 1, level = 2},
 	{"caverealms_glow_obsidian_brick_2.png"},
 	"Glow Obsidian Brick Stair",
 	"Glow Obsidian Brick Slab",
-	default.node_sound_stone_defaults())
+	mcl_sounds.node_sound_stone_defaults())
 
 --Glow Obsidian Glass
 minetest.register_node("caverealms:glow_obsidian_glass", {
@@ -381,7 +381,7 @@ minetest.register_node("caverealms:glow_obsidian_glass", {
 	light_source = 13,
 	sunlight_propagates = true,
 	groups = {cracky = 3},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = mcl_sounds.node_sound_glass_defaults(),
 })
 
 --Coal Dust
@@ -390,7 +390,7 @@ minetest.register_node("caverealms:coal_dust", {
 	tiles = {"caverealms_coal_dust.png"},
 	is_ground_content = true,
 	groups = {crumbly=3, falling_node=1, sand=1},
-	sounds = default.node_sound_sand_defaults(),
+	sounds = mcl_sounds.node_sound_sand_defaults(),
 })
 
 --glow worms

@@ -1,4 +1,4 @@
-default
-stairs
+mcl_core
+mcl_stairs
 ethereal?
 mobs?
